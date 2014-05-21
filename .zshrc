@@ -12,6 +12,12 @@ ZSH_THEME="bureau"
  alias vizsh="vim ~/.zshrc"
  alias greph="history | grep"
  alias sites="cd ~/Sites"
+
+ alias gita="git add"
+ alias gitc="git commit"
+ alias gits="git status"
+ alias gitp="git push"
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
