@@ -9,7 +9,9 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bureau"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+ alias zshconfig="vim ~/.zshrc"
+ alias greph="history | grep"
+ alias sites="cd ~/Sites"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
