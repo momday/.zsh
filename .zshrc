@@ -9,7 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bureau"
 
 # Example aliases
- alias zshconfig="vim ~/.zshrc"
+ alias vizsh="vim ~/.zshrc"
  alias greph="history | grep"
  alias sites="cd ~/Sites"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
