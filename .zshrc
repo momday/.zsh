@@ -12,11 +12,15 @@ ZSH_THEME="bureau"
  alias vizsh="vim ~/.zshrc"
  alias greph="history | grep"
  alias sites="cd ~/Sites"
+ alias yii="cd ~/Sites/yii/"
+ alias dl="cd ~/Downloads"
 
  alias gita="git add"
  alias gitc="git commit"
  alias gits="git status"
  alias gitp="git push"
+
+ alias szsh="source ~/.zshrc"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
@@ -63,7 +67,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -81,3 +85,8 @@ export LANG=en_US.UTF-8
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# viusally indidcate it's been reloaded.
+# TODO: check that all above was done correctly before displaying 
+#       the message
+echo .zshrc reloaded
