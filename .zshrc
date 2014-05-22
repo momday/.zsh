@@ -9,7 +9,9 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bureau"
 
 # Example aliases
- alias vizsh="vim ~/.zshrc"
+ alias vimz="vim ~/.zshrc"
+ alias vimvim="vim ~/.vimrc"
+
  alias greph="history | grep"
  alias sites="cd ~/Sites"
  alias yii="cd ~/Sites/yii/"
@@ -20,7 +22,7 @@ ZSH_THEME="bureau"
  alias gits="git status"
  alias gitp="git push"
 
- alias szsh="source ~/.zshrc"
+ alias sourcez="source ~/.zshrc"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
@@ -85,6 +87,9 @@ export LANG=en_US.UTF-8
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Vi mode
+ bindkey -v
 
 # viusally indidcate it's been reloaded.
 # TODO: check that all above was done correctly before displaying 
