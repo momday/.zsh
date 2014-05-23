@@ -8,14 +8,11 @@ export ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="agnoster"
 ZSH_THEME="bureau"
 
-# Example aliases
+# Aliases 
  alias vimz="vim ~/.zshrc"
  alias vimvim="vim ~/.vimrc"
 
  alias greph="history | grep"
- alias sites="cd ~/Sites"
- alias yii="cd ~/Sites/yii/"
- alias dl="cd ~/Downloads"
 
  alias gita="git add"
  alias gitc="git commit"
@@ -24,7 +21,12 @@ ZSH_THEME="bureau"
 
  alias sourcez="source ~/.zshrc"
 
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+ alias sites="cd ~/Sites"
+ alias pg="cd ~/Sites/playground"
+ alias yii="cd ~/Sites/yii/"
+ alias dl="cd ~/Downloads"
+
+ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -66,6 +68,7 @@ ZSH_THEME="bureau"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source .myrc
 
 # User configuration
 
@@ -90,6 +93,8 @@ export LANG=en_US.UTF-8
 
 # Vi mode
  bindkey -v
+# kill the 0.4s lag (related to vi mode)
+ export KEYTIMEOUT=1
 
 # viusally indidcate it's been reloaded.
 # TODO: check that all above was done correctly before displaying 
