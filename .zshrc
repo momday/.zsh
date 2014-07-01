@@ -68,7 +68,15 @@ ZSH_THEME="bureau"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source .myrc
+
+# source .myrc only if it exists.
+if [ -f .myrc ]
+then 
+    source .myrc
+    echo "sourcing .myrc"
+else
+    echo "no .myrc to source."
+fi
 
 # User configuration
 
