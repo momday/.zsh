@@ -73,9 +73,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # source .myrc only if it exists.
-if [ -f .myrc ]
+if [ -f ~/.myrc ]
 then 
-    source .myrc
+    source ~/.myrc
     echo "sourcing .myrc"
 else
     echo "no .myrc to source."
