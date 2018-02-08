@@ -6,30 +6,31 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="agnoster"
-ZSH_THEME="bureau"
+#ZSH_THEME="bureau"
 
-# Aliases 
+# Aliases
 
-alias vim="/usr/local/Cellar/vim/7.4.335/bin/vim"
+#alias vim="/usr/local/Cellar/vim/7.4.335/bin/vim"
 
 alias vimz="vim ~/.zshrc"
-alias vimvim="vim ~/.vimrc"
+#alias vimvim="vim ~/.vimrc"
 
  alias greph="history | grep"
 
- alias gita="git add"
- alias gitc="git commit"
- alias gits="git status"
- alias gitp="git push"
+ alias ga="git add"
+ alias gc="git commit"
+ alias gs="git status"
+ alias gp="git push"
 
  alias sourcez="source ~/.zshrc"
 
  alias sites="cd ~/Sites"
  alias pg="cd ~/Sites/playground"
- alias yii="cd ~/Sites/yii/"
  alias dl="cd ~/Downloads"
 
- alias ohmyzsh="vim ~/.oh-my-zsh"
+ alias vimomz="vim ~/.oh-my-zsh"
+
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -74,7 +75,7 @@ source $ZSH/oh-my-zsh.sh
 
 # source .myrc only if it exists.
 if [ -f ~/.myrc ]
-then 
+then
     source ~/.myrc
     echo "sourcing .myrc"
 else
@@ -102,12 +103,13 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Vi mode
- bindkey -v
+# Vi mode in this mode, the history completion doesn't work well.
+# bindkey -v
+
 # kill the 0.4s lag (related to vi mode)
  export KEYTIMEOUT=1
 
 # viusally indidcate it's been reloaded.
-# TODO: check that all above was done correctly before displaying 
+# TODO: check that all above was done correctly before displaying
 #       the message
 echo .zshrc reloaded
