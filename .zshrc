@@ -84,7 +84,7 @@ fi
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kaneoh/.nvm/versions/node/v9.4.0/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -108,6 +108,9 @@ export LANG=en_US.UTF-8
 
 # kill the 0.4s lag (related to vi mode)
  export KEYTIMEOUT=1
+
+ export NVM_DIR=~/.nvm
+ # source $(brew --prefix nvm)/nvm.sh
 
 # viusally indidcate it's been reloaded.
 # TODO: check that all above was done correctly before displaying
